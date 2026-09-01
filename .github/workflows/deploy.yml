@@ -1,4 +1,4 @@
-name: Deploy Hair Salon Cash Flow
+name: Deploy HairSalon Cash Flow
 
 on:
   push:
