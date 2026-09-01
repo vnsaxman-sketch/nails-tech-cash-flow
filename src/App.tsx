@@ -35,11 +35,15 @@ import "./App.css";
 type TabName = "dashboard" | "history" | "settings";
 
 const serviceCategories: ServiceCategory[] = [
-  "Manicure",
-  "Pedicure",
-  "Acrylic",
-  "Gel",
-  "Nail Art",
+  "Haircut",
+  "Haircut and Beard Trim",
+  "Beard Trim",
+  "Hair Wash and Style",
+  "Hair Coloring",
+  "Highlights",
+  "Perm",
+  "Hair Treatment",
+  "Kids Haircut",
   "Extra Service",
 ];
 
@@ -55,7 +59,7 @@ const paymentMethods: PaymentMethod[] = [
 function createEmptyForm() {
   return {
     date: todayText(),
-    serviceCategory: "Manicure" as ServiceCategory,
+    serviceCategory: "Haircut" as ServiceCategory,
     extraServiceNote: "",
     clientName: "",
     serviceAmount: "",
@@ -297,14 +301,14 @@ export default function App() {
 
   function exportJsonBackup() {
     const backup = {
-      appName: "Nail Technician Income Tracker",
+      appName: "Hair Salon and Barber Income Tracker",
       exportedAt: new Date().toISOString(),
       settings,
       entries,
     };
 
     downloadFile(
-      `nail-tech-income-backup-${todayText()}.json`,
+      `hair-salon-barber-income-backup-${todayText()}.json`,
       JSON.stringify(backup, null, 2),
       "application/json",
     );
@@ -345,7 +349,7 @@ export default function App() {
       .join("\n");
 
     downloadFile(
-      `nail-tech-income-${todayText()}.csv`,
+      `hair-salon-barber-income-${todayText()}.csv`,
       csvContent,
       "text/csv;charset=utf-8",
     );
@@ -425,8 +429,8 @@ export default function App() {
       <header className="app-header">
         <div>
           <p className="eyebrow">Personal Income Tracker</p>
-          <h1>Nail Technician Income</h1>
-	  <p className="eyebrow">Developed by: Long Nguyen</p>
+          <h1>Hair Salon & Barber Income</h1>
+          <p className="eyebrow">Developed by: Long Nguyen</p>
         </div>
 
         <div className="all-time-total">
@@ -543,7 +547,7 @@ export default function App() {
                   Extra Service Note
                   <input
                     value={form.extraServiceNote}
-                    placeholder="Example: Repair, polish change, waxing"
+                    placeholder="Example: Shave, blowout, scalp massage, styling"
                     onChange={(event) =>
                       updateForm("extraServiceNote", event.target.value)
                     }
@@ -615,7 +619,7 @@ export default function App() {
                 Notes (Optional)
                 <input
                   value={form.notes}
-                  placeholder="Color, design, discount, payment split, etc."
+                  placeholder="Hair length, color formula, fade type, discount, payment split, etc."
                   onChange={(event) =>
                     updateForm("notes", event.target.value)
                   }

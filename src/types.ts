@@ -7,12 +7,17 @@ export type PaymentMethod =
   | "Coupon";
 
 export type ServiceCategory =
-  | "Manicure"
-  | "Pedicure"
-  | "Acrylic"
-  | "Gel"
-  | "Nail Art"
+  | "Haircut"
+  | "Haircut and Beard Trim"
+  | "Beard Trim"
+  | "Hair Wash and Style"
+  | "Hair Coloring"
+  | "Highlights"
+  | "Perm"
+  | "Hair Treatment"
+  | "Kids Haircut"
   | "Extra Service";
+
 
 export interface IncomeEntry {
   id: string;

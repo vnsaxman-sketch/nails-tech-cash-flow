@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
 
-  base: '/nails-tech-cash-flow/',
+  base: '/hairsalon-cash-flow/',
 
   build: {
     outDir: "dist",

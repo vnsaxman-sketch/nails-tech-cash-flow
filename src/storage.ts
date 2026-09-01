@@ -1,7 +1,7 @@
 import type { AppSettings, IncomeEntry } from "./types";
 
-const INCOME_STORAGE_KEY = "nail-tech-income-entries-v1";
-const SETTINGS_STORAGE_KEY = "nail-tech-income-settings-v1";
+const INCOME_STORAGE_KEY = "hairsalon-barber-income-entries-v1";
+const SETTINGS_STORAGE_KEY = "hairsalon-barber-income-settings-v1";
 
 const defaultSettings: AppSettings = {
   biweeklyStartDate: new Date().toISOString().slice(0, 10),
