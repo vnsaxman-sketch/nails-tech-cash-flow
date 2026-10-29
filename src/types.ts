@@ -7,6 +7,7 @@ export type PaymentMethod =
   | "Coupon";
 
 export type ServiceCategory =
+<<<<<<< HEAD
   | "Haircut"
   | "Haircut and Beard Trim"
   | "Beard Trim"
@@ -16,6 +17,23 @@ export type ServiceCategory =
   | "Perm"
   | "Hair Treatment"
   | "Kids Haircut"
+=======
+  | "Manicure"
+  | "Full Set"
+  | "Gel/Refill"
+  | "Repair"
+  | "Fiberglass/Fill"
+  | "Wraps/Silk"
+  | "Cutdown"
+  | "French Manicure"
+  | "Refill"
+  | "Polish Change"
+  | "Hot oil"
+  | "Pedicure"
+  | "Acrylic"
+  | "Gel"
+  | "Nail Art"
+>>>>>>> 1133cc8 (Change ServiceCategory)
   | "Extra Service";
 
 

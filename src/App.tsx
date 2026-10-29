@@ -35,6 +35,7 @@ import "./App.css";
 type TabName = "dashboard" | "history" | "settings";
 
 const serviceCategories: ServiceCategory[] = [
+<<<<<<< HEAD
   "Haircut",
   "Haircut and Beard Trim",
   "Beard Trim",
@@ -44,6 +45,22 @@ const serviceCategories: ServiceCategory[] = [
   "Perm",
   "Hair Treatment",
   "Kids Haircut",
+=======
+  "Manicure",
+  "Full Set",
+  "Gel/Refill",
+  "Repair",
+  "Fiberglass/Fill",
+  "Wraps/Silk",
+  "Cutdown",
+  "French Manicure",
+  "Refill",
+  "Polish Change",
+  "Hot oil",
+  "Pedicure",
+  "Acrylic",
+  "Nail Art",
+>>>>>>> 1133cc8 (Change ServiceCategory)
   "Extra Service",
 ];
 
